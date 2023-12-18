@@ -28,11 +28,13 @@
  * outputs) are printed at the end.
  * -----------------------------------------------------------------*/
 
-#include <ida/ida.h>                /* prototypes for IDA fcts., consts.    */
+#include <ida/ida.h> /* prototypes for IDA fcts., consts.    */
+#include <math.h>
 #include <nvector/nvector_serial.h> /* access to serial N_Vector            */
 #include <stdio.h>
-#include <sundials/sundials_math.h> /* defs. of SUNRabs, SUNRexp, etc.      */
-#include <sundials/sundials_types.h> /* defs. of sunrealtype, sunindextype      */
+#include <sundials/sundials_core.h>
+
+#include "ida/ida_ls.h"
 
 #if defined(SUNDIALS_EXTENDED_PRECISION)
 #define GSYM "Lg"

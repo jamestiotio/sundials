@@ -37,9 +37,11 @@
 #include <nvector/nvector_serial.h> /* access to serial N_Vector            */
 #include <stdio.h>
 #include <stdlib.h>
-#include <sundials/sundials_math.h> /* definition of SUNRabs, SUNRexp, etc. */
+#include <sundials/sundials_core.h>
 #include <sunlinsol/sunlinsol_dense.h> /* access to band SUNLinearSolver       */
 #include <sunmatrix/sunmatrix_dense.h> /* access to band SUNMatrix             */
+
+#include "cvodes/cvodes_ls.h"
 
 #define Ith(v, i) NV_Ith_S(v, i - 1)
 

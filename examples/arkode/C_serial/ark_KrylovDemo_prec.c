@@ -100,9 +100,10 @@
 #include <nvector/nvector_serial.h> /* serial N_Vector types, fct. and macros      */
 #include <stdio.h>
 #include <stdlib.h>
-#include <sundials/sundials_dense.h> /* use generic DENSE solver in preconditioning */
-#include <sundials/sundials_types.h> /* definition of sunrealtype                      */
+#include <sundials/sundials_core.h>
 #include <sunlinsol/sunlinsol_spgmr.h> /* access to SPGMR SUNLinearSolver             */
+
+#include "arkode/arkode.h"
 
 /* helpful macros */
 

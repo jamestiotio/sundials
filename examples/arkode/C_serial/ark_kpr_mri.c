@@ -78,9 +78,13 @@
 #include <math.h>
 #include <nvector/nvector_serial.h> /* serial N_Vector type, fcts., macros  */
 #include <stdio.h>
-#include <sundials/sundials_math.h> /* def. math fcns, 'sunrealtype'           */
+#include <stdlib.h>
+#include <sundials/sundials_core.h>
 #include <sunlinsol/sunlinsol_dense.h> /* dense linear solver                  */
 #include <sunmatrix/sunmatrix_dense.h> /* dense matrix type, fcts., macros     */
+
+#include "arkode/arkode.h"
+#include "arkode/arkode_butcher.h"
 
 #if defined(SUNDIALS_EXTENDED_PRECISION)
 #define GSYM ".20Lg"

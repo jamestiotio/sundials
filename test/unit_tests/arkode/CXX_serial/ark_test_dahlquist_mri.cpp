@@ -21,8 +21,6 @@
 #include <arkode/arkode_mristep.h>
 #include <cmath>
 #include <cstdio>
-#include <cstring>
-#include <iomanip>
 #include <iostream>
 #include <nvector/nvector_serial.h>
 #include <string>
@@ -30,7 +28,9 @@
 #include <sunlinsol/sunlinsol_dense.h>
 #include <sunmatrix/sunmatrix_dense.h>
 
+#include "arkode/arkode.h"
 #include "arkode/arkode_mri_tables_impl.h"
+#include "arkode/arkode_mristep_impl.h"
 
 #if defined(SUNDIALS_EXTENDED_PRECISION)
 #define GSYM "Lg"

@@ -14,6 +14,7 @@
 
 #include <iostream>
 #include <string>
+#include <sundials/sundials_core.hpp>
 
 #define SUNDIALS_HOST_DEVICE
 #define SUNDIALS_DEVICE_INLINE

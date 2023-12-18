@@ -21,8 +21,7 @@
 #include <nvector/nvector_serial.h>
 #include <stdio.h>
 #include <stdlib.h>
-#include <sundials/sundials_math.h>
-#include <sundials/sundials_types.h>
+#include <sundials/sundials_core.h>
 
 #include "test_nvector.h"
 

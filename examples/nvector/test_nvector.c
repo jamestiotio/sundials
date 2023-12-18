@@ -19,19 +19,15 @@
  * implementation.
  * -----------------------------------------------------------------*/
 
-#include <sundials/sundials_config.h>
-
 /* POSIX timers */
 #if defined(SUNDIALS_HAVE_POSIX_TIMERS)
-#include <stddef.h>
 #include <time.h>
 #include <unistd.h>
 #endif
 
+#include <mpi.h>
 #include <stdio.h>
 #include <stdlib.h>
-#include <sundials/sundials_math.h>
-#include <sundials/sundials_nvector.h>
 
 #include "test_nvector.h"
 

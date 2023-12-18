@@ -15,7 +15,7 @@
  * ---------------------------------------------------------------------------*/
 
 #include <stdio.h>
-#include <stdlib.h>
+#include <sundials/sundials_core.h>
 
 #include "cvodes/cvodes.h"
 #include "nvector/nvector_serial.h"

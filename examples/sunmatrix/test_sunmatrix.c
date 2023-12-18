@@ -20,12 +20,7 @@
 
 #include "test_sunmatrix.h"
 
-#include <math.h> /* include isnan */
 #include <stdio.h>
-#include <stdlib.h>
-#include <sundials/sundials_math.h>
-#include <sundials/sundials_matrix.h>
-#include <sundials/sundials_types.h>
 
 #if defined(SUNDIALS_HAVE_POSIX_TIMERS) && defined(_POSIX_TIMERS)
 #include <time.h>

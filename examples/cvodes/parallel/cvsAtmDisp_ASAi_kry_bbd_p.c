@@ -20,14 +20,14 @@
 #include <cvodes/cvodes.h>
 #include <cvodes/cvodes_bbdpre.h>
 #include <limits.h>
-#include <math.h>
 #include <mpi.h>
 #include <nvector/nvector_parallel.h>
 #include <stdio.h>
 #include <stdlib.h>
-#include <sundials/sundials_math.h>
-#include <sundials/sundials_types.h>
+#include <sundials/sundials_core.h>
 #include <sunlinsol/sunlinsol_spgmr.h>
+
+#include "cvodes/cvodes_ls.h"
 
 /*
  *------------------------------------------------------------------

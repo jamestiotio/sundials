@@ -38,8 +38,11 @@
 #include <math.h>
 #include <nvector/nvector_serial.h> /* access to serial N_Vector            */
 #include <stdio.h>
+#include <sundials/sundials_core.h>
 #include <sunlinsol/sunlinsol_dense.h> /* access to dense SUNLinearSolver      */
 #include <sunmatrix/sunmatrix_dense.h> /* access to dense SUNMatrix            */
+
+#include "cvodes/cvodes_ls.h"
 
 /* User-defined vector and matrix accessor macros: Ith, IJth */
 

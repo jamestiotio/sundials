@@ -40,10 +40,11 @@
 #include <cvode/cvode.h>
 #include <nvector/nvector_serial.h>
 #include <stdio.h>
+#include <sundials/sundials_core.h>
 #include <sunlinsol/sunlinsol_dense.h>
 #include <sunmatrix/sunmatrix_dense.h>
 
-#include "sundials/sundials_nvector.h"
+#include "cvode/cvode_ls.h"
 
 #if defined(SUNDIALS_EXTENDED_PRECISION)
 #define GSYM "Lg"

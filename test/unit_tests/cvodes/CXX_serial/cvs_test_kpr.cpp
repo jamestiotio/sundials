@@ -29,6 +29,19 @@
 
 #include "cvs_test_kpr.hpp"
 
+#include <cstdio>
+#include <fstream>
+#include <iomanip>
+#include <limits>
+#include <stdlib.h>
+#include <sundials/sundials_core.hpp>
+
+#include "cvodes/cvodes.h"
+#include "cvodes/cvodes_ls.h"
+#include "nvector/nvector_serial.h"
+#include "sunlinsol/sunlinsol_dense.h"
+#include "sunmatrix/sunmatrix_dense.h"
+
 int main(int argc, char* argv[])
 {
   // SUNDIALS context object for this simulation

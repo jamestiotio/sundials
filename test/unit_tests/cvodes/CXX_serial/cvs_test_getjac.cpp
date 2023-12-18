@@ -27,21 +27,19 @@
  *   s(t) = cos(2t)
  * ---------------------------------------------------------------------------*/
 
-#include <algorithm>
 #include <cmath>
-#include <cstdio>
 #include <cstdlib>
-#include <fstream>
 #include <iomanip>
 #include <iostream>
 #include <limits>
-#include <sstream>
-#include <vector>
+#include <string>
+#include <sundials/sundials_core.h>
+#include <sundials/sundials_core.hpp>
 
 // Include desired integrators, vectors, linear solvers, and nonlinear solvers
 #include "cvodes/cvodes.h"
+#include "cvodes/cvodes_ls.h"
 #include "nvector/nvector_serial.h"
-#include "sundials/sundials_core.hpp"
 #include "sunlinsol/sunlinsol_dense.h"
 #include "sunmatrix/sunmatrix_dense.h"
 

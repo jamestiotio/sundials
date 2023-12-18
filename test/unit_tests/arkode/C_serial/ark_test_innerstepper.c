@@ -17,7 +17,7 @@
  * ---------------------------------------------------------------------------*/
 
 #include <stdio.h>
-#include <stdlib.h>
+#include <sundials/sundials_core.h>
 
 #include "arkode/arkode.h"
 #include "arkode/arkode_mristep.h"

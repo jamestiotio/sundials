@@ -20,8 +20,7 @@
 #include <nvector/nvector_serial.h>
 #include <stdio.h>
 #include <stdlib.h>
-#include <sundials/sundials_math.h>
-#include <sundials/sundials_types.h>
+#include <sundials/sundials_core.h>
 #include <sunlinsol/sunlinsol_band.h>
 #include <sunmatrix/sunmatrix_band.h>
 

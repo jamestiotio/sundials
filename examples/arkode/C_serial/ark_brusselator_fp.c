@@ -57,9 +57,11 @@
 #include <math.h>
 #include <nvector/nvector_serial.h> /* serial N_Vector types, fcts., macros */
 #include <stdio.h>
-#include <sundials/sundials_logger.h>
-#include <sundials/sundials_types.h> /* def. of type 'sunrealtype'              */
+#include <stdlib.h>
+#include <sundials/sundials_core.h>
 #include <sunnonlinsol/sunnonlinsol_fixedpoint.h> /* access to FP nonlinear solver        */
+
+#include "arkode/arkode.h"
 
 #if defined(SUNDIALS_EXTENDED_PRECISION)
 #define GSYM "Lg"

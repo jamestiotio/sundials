@@ -26,14 +26,13 @@
  * -----------------------------------------------------------------
  */
 
-#include <kinsol/kinsol.h> /* access to KINSOL func., consts. */
-#include <math.h>
+#include <kinsol/kinsol.h>          /* access to KINSOL func., consts. */
 #include <nvector/nvector_serial.h> /* access to serial N_Vector       */
 #include <stdio.h>
-#include <stdlib.h>
-#include <sundials/sundials_math.h>    /* access to SUNRexp               */
-#include <sundials/sundials_types.h>   /* defs. of sunrealtype, sunindextype */
+#include <sundials/sundials_core.h>
 #include <sunlinsol/sunlinsol_spgmr.h> /* access to SPGMR SUNLinearSolver */
+
+#include "kinsol/kinsol_ls.h"
 
 /* Problem Constants */
 

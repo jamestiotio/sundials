@@ -61,8 +61,10 @@
 #include <nvector/nvector_parallel.h> /* access to MPI-parallel N_Vector  */
 #include <stdio.h>
 #include <stdlib.h>
-#include <sundials/sundials_types.h>   /* SUNDIALS type definitions        */
+#include <sundials/sundials_core.h>
 #include <sunlinsol/sunlinsol_spgmr.h> /* access to SPGMR SUNLinearSolver  */
+
+#include "arkode/arkode.h"
 
 /* helpful macros */
 

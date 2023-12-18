@@ -62,8 +62,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <sundials/sundials_core.h>
 #include <sunlinsol/sunlinsol_dense.h> /* access to dense SUNLinearSolver */
 #include <sunmatrix/sunmatrix_dense.h> /* access to dense SUNmatrix       */
+
+#include "cvode/cvode_ls.h"
+#include "cvode/cvode_proj.h"
 
 /* Precision specific formatting macros */
 #if defined(SUNDIALS_EXTENDED_PRECISION)

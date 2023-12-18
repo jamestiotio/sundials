@@ -22,6 +22,8 @@
 #include <iostream>
 #include <limits>
 #include <sstream>
+#include <string>
+#include <sundials/sundials_core.h>
 #include <vector>
 
 // Include desired integrators, vectors, linear solvers, and nonlinear solvers

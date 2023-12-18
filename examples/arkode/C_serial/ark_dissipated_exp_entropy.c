@@ -30,12 +30,15 @@
 /* Header files */
 #include <math.h>
 #include <stdio.h>
-
 /* SUNDIALS headers */
 #include <arkode/arkode_arkstep.h>
 #include <nvector/nvector_serial.h>
+#include <stdlib.h>
+#include <sundials/sundials_core.h>
 #include <sunlinsol/sunlinsol_dense.h>
 #include <sunmatrix/sunmatrix_dense.h>
+
+#include "arkode/arkode.h"
 
 /* Convince macros for calling precision-specific math functions */
 #if defined(SUNDIALS_DOUBLE_PRECISION)

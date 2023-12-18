@@ -59,13 +59,15 @@
 
 #include <cvode/cvode.h> /* prototypes for CVODE fcts., consts.      */
 #include <math.h>
+#include <mpi.h>
 #include <nvector/nvector_mpimanyvector.h> /* access to MPIManyVector (includes mpi.h) */
 #include <nvector/nvector_parallel.h> /* access to MPI-parallel N_Vector          */
 #include <stdio.h>
 #include <stdlib.h>
-#include <sundials/sundials_dense.h> /* prototypes for small dense fcts.         */
-#include <sundials/sundials_types.h> /* definitions of sunrealtype, sunbooleantype     */
+#include <sundials/sundials_core.h>
 #include <sunlinsol/sunlinsol_spgmr.h> /* access to SPGMR SUNLinearSolver          */
+
+#include "cvode/cvode_ls.h"
 
 /* helpful macros */
 

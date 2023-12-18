@@ -36,14 +36,15 @@
  * IDACalcIC cost statistics only.)
  * -----------------------------------------------------------------*/
 
-#include <ida/ida.h> /* prototypes for IDA fcts., consts.    */
-#include <math.h>
+#include <ida/ida.h>                /* prototypes for IDA fcts., consts.    */
 #include <nvector/nvector_serial.h> /* access to serial N_Vector            */
 #include <stdio.h>
 #include <stdlib.h>
-#include <sundials/sundials_types.h> /* definition of type sunrealtype          */
+#include <sundials/sundials_core.h>
 #include <sunlinsol/sunlinsol_band.h> /* access to band SUNLinearSolver       */
 #include <sunmatrix/sunmatrix_band.h> /* access to band SUNMatrix             */
+
+#include "ida/ida_ls.h"
 
 /* Problem Constants */
 

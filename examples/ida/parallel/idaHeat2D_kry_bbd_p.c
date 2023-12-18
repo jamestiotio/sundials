@@ -44,13 +44,14 @@
 
 #include <ida/ida.h>
 #include <ida/ida_bbdpre.h>
-#include <math.h>
 #include <mpi.h>
 #include <nvector/nvector_parallel.h>
 #include <stdio.h>
 #include <stdlib.h>
-#include <sundials/sundials_types.h>
+#include <sundials/sundials_core.h>
 #include <sunlinsol/sunlinsol_spgmr.h>
+
+#include "ida/ida_ls.h"
 
 #define ZERO SUN_RCONST(0.0)
 #define ONE  SUN_RCONST(1.0)

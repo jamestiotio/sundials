@@ -69,10 +69,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <sundials/sundials_math.h>   /* def. of SUNRsqrt, etc. */
-#include <sundials/sundials_types.h>  /* def. of type 'sunrealtype' */
+#include <sundials/sundials_core.h>
 #include <sunlinsol/sunlinsol_band.h> /* access to band SUNLinearSolver */
 #include <sunmatrix/sunmatrix_band.h> /* access to band SUNMatrix */
+
+#include "arkode/arkode.h"
+#include "arkode/arkode_butcher.h"
+#include "arkode/arkode_butcher_dirk.h"
 
 #if defined(SUNDIALS_EXTENDED_PRECISION)
 #define GSYM "Lg"

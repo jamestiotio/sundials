@@ -36,13 +36,14 @@
  *---------------------------------------------------------------*/
 
 /* Header files */
-#include <arkode/arkode_arkstep.h> /* prototypes for ARKStep fcts., consts */
-#include <math.h>
+#include <arkode/arkode_arkstep.h>  /* prototypes for ARKStep fcts., consts */
 #include <nvector/nvector_serial.h> /* serial N_Vector types, fcts., macros */
 #include <stdio.h>
-#include <sundials/sundials_types.h> /* defs. of 'sunrealtype', 'sunindextype'  */
+#include <sundials/sundials_core.h>
 #include <sunlinsol/sunlinsol_dense.h> /* access to dense SUNLinearSolver      */
 #include <sunmatrix/sunmatrix_dense.h> /* access to dense SUNMatrix            */
+
+#include "arkode/arkode.h"
 
 #if defined(SUNDIALS_EXTENDED_PRECISION)
 #define GSYM "Lg"

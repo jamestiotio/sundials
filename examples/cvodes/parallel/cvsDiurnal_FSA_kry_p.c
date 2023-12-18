@@ -79,9 +79,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <sundials/sundials_dense.h> /* generic DENSE solver used in prec. */
-#include <sundials/sundials_types.h> /* def. of sunrealtype */
+#include <sundials/sundials_core.h>
 #include <sunlinsol/sunlinsol_spgmr.h> /* defs. for SUNLinSol_SPGMR fcts. and constants */
+
+#include "cvodes/cvodes_ls.h"
 
 /* helpful macros */
 

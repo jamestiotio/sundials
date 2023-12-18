@@ -47,12 +47,15 @@
 /* Header files */
 #include <math.h>
 #include <stdio.h>
-
 /* SUNDIALS headers */
 #include <arkode/arkode_arkstep.h>
 #include <nvector/nvector_serial.h>
+#include <stdlib.h>
+#include <sundials/sundials_core.h>
 #include <sunlinsol/sunlinsol_dense.h>
 #include <sunmatrix/sunmatrix_dense.h>
+
+#include "arkode/arkode.h"
 
 /* Value of the natural number e */
 #define EVAL 2.718281828459045235360287471352662497757247093699959574966

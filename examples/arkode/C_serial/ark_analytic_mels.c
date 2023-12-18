@@ -34,7 +34,9 @@
 #include <math.h>
 #include <nvector/nvector_serial.h> /* serial N_Vector types, fcts., macros */
 #include <stdio.h>
-#include <sundials/sundials_types.h> /* definition of type sunrealtype          */
+#include <sundials/sundials_core.h>
+
+#include "arkode/arkode.h"
 
 #if defined(SUNDIALS_EXTENDED_PRECISION)
 #define GSYM "Lg"

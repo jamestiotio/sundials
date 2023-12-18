@@ -78,8 +78,10 @@
 #include <nvector/nvector_parallel.h>
 #include <stdio.h>
 #include <stdlib.h>
-#include <sundials/sundials_types.h>
+#include <sundials/sundials_core.h>
 #include <sunlinsol/sunlinsol_spgmr.h>
+
+#include "idas/idas_ls.h"
 
 /* Problem Constants */
 #define NUM_SPECIES 2

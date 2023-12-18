@@ -20,15 +20,15 @@
  * See http://pitagora.dm.uniba.it/~testset/report/chemakzo.pdf
  * -----------------------------------------------------------------*/
 
-#include <idas/idas.h> /* prototypes for IDA fcts., consts.    */
-#include <math.h>
+#include <idas/idas.h>              /* prototypes for IDA fcts., consts.    */
 #include <nvector/nvector_serial.h> /* access to serial N_Vector            */
 #include <stdio.h>
 #include <stdlib.h>
-#include <sundials/sundials_math.h> /* defs. of SUNRabs, SUNRexp, etc.      */
-#include <sundials/sundials_types.h> /* defs. of sunrealtype, sunindextype      */
+#include <sundials/sundials_core.h>
 #include <sunlinsol/sunlinsol_dense.h> /* access to dense SUNLinearSolver      */
 #include <sunmatrix/sunmatrix_dense.h> /* access to dense SUNMatrix            */
+
+#include "idas/idas_ls.h"
 
 /* Accessor macros */
 #define Ith(v, i) NV_Ith_S(v, i - 1) /* i-th vector component */

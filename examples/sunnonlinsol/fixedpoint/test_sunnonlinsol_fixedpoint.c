@@ -30,10 +30,9 @@
 #include <math.h>
 #include <stdio.h>
 #include <stdlib.h>
+#include <sundials/sundials_core.h>
 
 #include "nvector/nvector_serial.h"
-#include "sundials/sundials_math.h"
-#include "sundials/sundials_types.h"
 #include "sunnonlinsol/sunnonlinsol_fixedpoint.h"
 
 /* precision specific formatting macros */

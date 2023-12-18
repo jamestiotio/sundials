@@ -65,12 +65,14 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <sundials/sundials_core.h>
 
-#include "arkode/arkode_arkstep.h"    /* ARKStep                   */
-#include "arkode/arkode_erkstep.h"    /* ERKStep                   */
-#include "nvector/nvector_mpiplusx.h" /* MPI+X N_Vector            */
-#include "nvector/nvector_serial.h"   /* serial N_Vector           */
-#include "sundials/sundials_logger.h"
+#include "arkode/arkode.h"
+#include "arkode/arkode_arkstep.h" /* ARKStep                   */
+#include "arkode/arkode_erkstep.h" /* ERKStep                   */
+#include "nvector/nvector_mpimanyvector.h"
+#include "nvector/nvector_mpiplusx.h"         /* MPI+X N_Vector            */
+#include "nvector/nvector_serial.h"           /* serial N_Vector           */
 #include "sunlinsol/sunlinsol_dense.h"        /* dense SUNLinearSolver     */
 #include "sunlinsol/sunlinsol_spgmr.h"        /* GMRES SUNLinearSolver     */
 #include "sunmatrix/sunmatrix_dense.h"        /* dense SUNMatrix           */

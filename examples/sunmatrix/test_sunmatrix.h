@@ -19,6 +19,7 @@
  */
 
 #include <math.h>
+#include <stdio.h>
 #include <sundials/sundials_core.h>
 
 /* define constatnts */

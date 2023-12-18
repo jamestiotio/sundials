@@ -16,6 +16,7 @@
  * -----------------------------------------------------------------*/
 
 #include <math.h>
+#include <sundials/sundials_core.h>
 #include <sundials/sundials_types.h>
 
 /* define constants */

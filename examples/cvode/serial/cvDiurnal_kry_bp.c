@@ -42,8 +42,10 @@
 #include <nvector/nvector_serial.h> /* access to serial N_Vector            */
 #include <stdio.h>
 #include <stdlib.h>
-#include <sundials/sundials_types.h> /* defs. of sunrealtype, sunindextype      */
+#include <sundials/sundials_core.h>
 #include <sunlinsol/sunlinsol_spgmr.h> /* access to SPGMR SUNLinearSolver      */
+
+#include "cvode/cvode_ls.h"
 
 /* helpful macros */
 

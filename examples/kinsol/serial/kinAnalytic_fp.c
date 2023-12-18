@@ -31,6 +31,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <sundials/sundials_core.h>
 
 #include "kinsol/kinsol.h"          /* access to KINSOL func., consts. */
 #include "nvector/nvector_serial.h" /* access to serial N_Vector       */

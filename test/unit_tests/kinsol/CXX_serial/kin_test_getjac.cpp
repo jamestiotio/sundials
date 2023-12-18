@@ -31,22 +31,19 @@
  * Jacobian matrix is not overwritten with the factorization.
  * ---------------------------------------------------------------------------*/
 
-#include <algorithm>
 #include <cmath>
-#include <cstdio>
 #include <cstdlib>
-#include <fstream>
 #include <iomanip>
 #include <iostream>
 #include <limits>
-#include <sstream>
-#include <vector>
+#include <string>
+#include <sundials/sundials_core.h>
+#include <sundials/sundials_core.hpp>
 
 // Include KINSOL,vectors, and linear solvers
 #include "kinsol/kinsol.h"
+#include "kinsol/kinsol_ls.h"
 #include "nvector/nvector_serial.h"
-#include "sundials/sundials_core.hpp"
-#include "sundials/sundials_math.h"
 #include "sunlinsol/sunlinsol_dense.h"
 #include "sunmatrix/sunmatrix_dense.h"
 

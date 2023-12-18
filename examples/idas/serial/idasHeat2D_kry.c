@@ -36,13 +36,14 @@
  * The second run uses IDAReInit.
  * -----------------------------------------------------------------*/
 
-#include <idas/idas.h> /* prototypes for IDA fcts., consts.    */
-#include <math.h>
+#include <idas/idas.h>              /* prototypes for IDA fcts., consts.    */
 #include <nvector/nvector_serial.h> /* access to serial N_Vector            */
 #include <stdio.h>
 #include <stdlib.h>
-#include <sundials/sundials_types.h> /* definition of type sunrealtype          */
+#include <sundials/sundials_core.h>
 #include <sunlinsol/sunlinsol_spgmr.h> /* access to spgmr SUNLinearSolver      */
+
+#include "idas/idas_ls.h"
 
 /* Problem Constants */
 

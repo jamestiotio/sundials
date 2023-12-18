@@ -49,13 +49,11 @@
  * -----------------------------------------------------------------*/
 
 #include <cvodes/cvodes.h>
-#include <math.h>
 #include <nvector/nvector_serial.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <sundials/sundials_math.h>
-#include <sundials/sundials_types.h>
+#include <sundials/sundials_core.h>
 
 #include "sunnonlinsol/sunnonlinsol_fixedpoint.h" /* access to the fixed point SUNNonlinearSolver */
 

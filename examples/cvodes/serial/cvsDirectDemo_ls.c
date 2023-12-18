@@ -65,13 +65,13 @@
 #include <math.h>
 #include <nvector/nvector_serial.h> /* access to serial N_Vector                    */
 #include <stdio.h>
-#include <stdlib.h>
-#include <sundials/sundials_types.h> /* definition of sunrealtype                       */
+#include <sundials/sundials_core.h>
 #include <sunlinsol/sunlinsol_band.h> /* access to band SUNLinearSolver               */
 #include <sunlinsol/sunlinsol_dense.h> /* access to dense SUNLinearSolver              */
 #include <sunmatrix/sunmatrix_band.h> /* access to band SUNMatrix                     */
 #include <sunmatrix/sunmatrix_dense.h> /* access to dense SUNMatrix                    */
 
+#include "cvodes/cvodes_ls.h"
 #include "sunnonlinsol/sunnonlinsol_fixedpoint.h" /* access to the fixed point SUNNonlinearSolver */
 #include "sunnonlinsol/sunnonlinsol_newton.h" /* access to the newton SUNNonlinearSolver      */
 

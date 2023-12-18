@@ -21,18 +21,20 @@
  * argument (1 => linear).
  *---------------------------------------------------------------*/
 
+#include <stdio.h>
+#include <stdlib.h>
+#include <sundials/sundials_core.h>
 // Header files
 #include <cmath>
 #include <iostream>
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
+#include <string>
 
-#include "arkode/arkode_arkstep.h"    // prototypes for ARKStep fcts., consts
+#include "arkode/arkode.h"
+#include "arkode/arkode_arkstep.h" // prototypes for ARKStep fcts., consts
+#include "arkode/arkode_butcher.h"
 #include "arkode/arkode_mristep.h"    // prototypes for MRIStep fcts., consts
 #include "mpi.h"                      // MPI header file
 #include "nvector/nvector_parallel.h" // parallel N_Vector types, fcts., macros
-#include "sundials/sundials_types.h"  // def. of type 'sunrealtype'
 #include "sunlinsol/sunlinsol_pcg.h"  // access to PCG SUNLinearSolver
 
 #if defined(SUNDIALS_EXTENDED_PRECISION)

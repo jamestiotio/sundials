@@ -14,14 +14,10 @@
 
 #include <chrono>
 #include <cstdio>
+#include <cwchar>
 #include <iostream>
-#include <ostream>
-#include <string>
+#include <sundials/sundials_core.h>
 #include <thread>
-
-#include "sundials/sundials_math.h"
-#include "sundials/sundials_profiler.h"
-#include "sundials/sundials_types.h"
 
 int sleep(SUNProfiler prof, int sec, double* chrono)
 {

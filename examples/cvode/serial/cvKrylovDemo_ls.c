@@ -45,14 +45,14 @@
 #include <nvector/nvector_serial.h> /* serial N_Vector types, fct. and macros      */
 #include <stdio.h>
 #include <stdlib.h>
-#include <sundials/sundials_dense.h> /* use generic DENSE solver in preconditioning */
-#include <sundials/sundials_logger.h>
-#include <sundials/sundials_types.h> /* definition of sunrealtype                      */
+#include <sundials/sundials_core.h>
 #include <sunlinsol/sunlinsol_spbcgs.h> /* access to SPBCGS SUNLinearSolver            */
 #include <sunlinsol/sunlinsol_spfgmr.h> /* access to SPFGMR SUNLinearSolver            */
 #include <sunlinsol/sunlinsol_spgmr.h> /* access to SPGMR SUNLinearSolver             */
 #include <sunlinsol/sunlinsol_sptfqmr.h> /* access to SPTFQMR SUNLinearSolver           */
 #include <sunnonlinsol/sunnonlinsol_newton.h> /* access to Newton SUNNonlinearSolver         */
+
+#include "cvode/cvode_ls.h"
 
 /* helpful macros */
 

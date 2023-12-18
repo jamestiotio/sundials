@@ -43,7 +43,7 @@
 #include <nvector/nvector_parallel.h> /* definition of N_Vector and macros */
 #include <stdio.h>
 #include <stdlib.h>
-#include <sundials/sundials_types.h> /* definition of sunrealtype */
+#include <sundials/sundials_core.h>
 
 #include "sunnonlinsol/sunnonlinsol_fixedpoint.h" /* access to the fixed point SUNNonlinearSolver */
 

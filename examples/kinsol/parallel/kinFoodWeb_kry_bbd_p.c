@@ -90,15 +90,14 @@
 
 #include <kinsol/kinsol.h>        /* access to KINSOL func., consts.      */
 #include <kinsol/kinsol_bbdpre.h> /* access to BBD preconditioner         */
-#include <math.h>
 #include <mpi.h>
 #include <nvector/nvector_parallel.h> /* access to MPI parallel N_Vector      */
 #include <stdio.h>
 #include <stdlib.h>
-#include <sundials/sundials_dense.h> /* use generic dense solver in precond. */
-#include <sundials/sundials_math.h>  /* access to SUNMAX, SUNRabs, SUNRsqrt  */
-#include <sundials/sundials_types.h> /* defs. of sunrealtype, sunindextype      */
+#include <sundials/sundials_core.h>
 #include <sunlinsol/sunlinsol_spgmr.h> /* access to SPGMR SUNLinearSolver      */
+
+#include "kinsol/kinsol_ls.h"
 
 /* Problem Constants */
 

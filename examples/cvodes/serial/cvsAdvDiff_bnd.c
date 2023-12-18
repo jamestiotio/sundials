@@ -34,18 +34,18 @@
  * Run statistics (optional outputs) are printed at the end.
  * -----------------------------------------------------------------*/
 
-#include <math.h>
 #include <stdio.h>
 #include <stdlib.h>
+#include <sundials/sundials_core.h>
 
 /* Header files with a description of contents used */
 
-#include <cvodes/cvodes.h>          /* prototypes for CVODES fcts., consts. */
-#include <nvector/nvector_serial.h> /* access to serial N_Vector            */
-#include <sundials/sundials_math.h> /* definition of SUNRabs and SUNRexp    */
-#include <sundials/sundials_types.h> /* definition of type sunrealtype          */
+#include <cvodes/cvodes.h>            /* prototypes for CVODES fcts., consts. */
+#include <nvector/nvector_serial.h>   /* access to serial N_Vector            */
 #include <sunlinsol/sunlinsol_band.h> /* access to band SUNLinearSolver       */
 #include <sunmatrix/sunmatrix_band.h> /* access to band SUNMatrix             */
+
+#include "cvodes/cvodes_ls.h"
 
 /* Problem Constants */
 

@@ -17,8 +17,7 @@
 
 #include <mpi.h>
 #include <stdio.h>
-#include <stdlib.h>
-#include <sundials/sundials_nvector.h>
+#include <sundials/sundials_core.h>
 
 #include "test_nvector.h"
 

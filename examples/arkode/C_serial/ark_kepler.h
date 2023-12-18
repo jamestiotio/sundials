@@ -20,6 +20,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <sundials/sundials_core.h>
 #include <sundials/sundials_math.h>
 #include <sundials/sundials_types.h>
 

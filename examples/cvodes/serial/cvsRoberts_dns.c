@@ -36,8 +36,11 @@
 #include <cvodes/cvodes.h>          /* prototypes for CVODE fcts., consts.  */
 #include <nvector/nvector_serial.h> /* access to serial N_Vector            */
 #include <stdio.h>
+#include <sundials/sundials_core.h>
 #include <sunlinsol/sunlinsol_dense.h> /* access to dense SUNLinearSolver      */
 #include <sunmatrix/sunmatrix_dense.h> /* access to dense SUNMatrix            */
+
+#include "cvodes/cvodes_ls.h"
 
 #if defined(SUNDIALS_EXTENDED_PRECISION)
 #define GSYM "Lg"

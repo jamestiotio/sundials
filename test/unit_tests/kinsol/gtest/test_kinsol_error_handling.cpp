@@ -10,14 +10,18 @@
  * SUNDIALS Copyright End
  * -----------------------------------------------------------------*/
 
-#include <gmock/gmock.h>
+#include "gmock/gmock.h"
+#include "gtest/gtest.h"
 #include <gtest/gtest.h>
 #include <kinsol/kinsol.h>
+#include <stddef.h>
+#include <string>
+#include <sundials/sundials_core.h>
 #include <sundials/sundials_core.hpp>
 
 #include "../../utilities/dumpstderr.hpp"
 #include "kinsol/kinsol_impl.h"
-#include "sundials/sundials_context.hpp"
+#include "sundials_logger_impl.h"
 
 static const std::string errfile{"test_error_handling.err"};
 

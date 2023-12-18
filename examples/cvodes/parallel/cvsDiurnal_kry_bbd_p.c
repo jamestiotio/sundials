@@ -66,8 +66,10 @@
 #include <nvector/nvector_parallel.h> /* definition N_Vector */
 #include <stdio.h>
 #include <stdlib.h>
-#include <sundials/sundials_types.h> /* definitions of sunrealtype, sunbooleantype */
+#include <sundials/sundials_core.h>
 #include <sunlinsol/sunlinsol_spgmr.h> /* prototypes and constants for SUNLinSol_SPGMR solver */
+
+#include "cvodes/cvodes_ls.h"
 
 /* helpful macros */
 

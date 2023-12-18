@@ -21,15 +21,15 @@
  * the polynomial order.
  * ---------------------------------------------------------------------------*/
 
-#include <math.h>
 #include <stdio.h>
 #include <stdlib.h>
+#include <sundials/sundials_core.h>
 
+#include "arkode/arkode.h"
 #include "arkode/arkode_arkstep.h"
 #include "arkode/arkode_arkstep_impl.h"
+#include "arkode/arkode_impl.h"
 #include "nvector/nvector_serial.h"
-#include "sundials/sundials_math.h"
-#include "sundials/sundials_types.h"
 #include "sunlinsol/sunlinsol_dense.h"
 #include "sunmatrix/sunmatrix_dense.h"
 

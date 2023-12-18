@@ -21,8 +21,7 @@
 // Header files
 #include <arkode/arkode_arkstep.h>
 #include <cmath>
-#include <cstdio>
-#include <iomanip>
+#include <cstdlib>
 #include <iostream>
 #include <nvector/nvector_serial.h>
 #include <string>
@@ -30,7 +29,10 @@
 #include <sunlinsol/sunlinsol_dense.h>
 #include <sunmatrix/sunmatrix_dense.h>
 
+#include "arkode/arkode.h"
 #include "arkode/arkode_butcher.h"
+#include "arkode/arkode_butcher_dirk.h"
+#include "arkode/arkode_butcher_erk.h"
 
 #if defined(SUNDIALS_EXTENDED_PRECISION)
 #define GSYM "Lg"

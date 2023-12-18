@@ -41,8 +41,10 @@
 #include <nvector/nvector_serial.h> /* serial N_Vector types, fcts., macros */
 #include <stdio.h>
 #include <stdlib.h>
-#include <sundials/sundials_types.h> /* defs. of sunrealtype, sunindextype, etc */
+#include <sundials/sundials_core.h>
 #include <sunlinsol/sunlinsol_pcg.h> /* access to PCG SUNLinearSolver        */
+
+#include "arkode/arkode.h"
 
 #if defined(SUNDIALS_EXTENDED_PRECISION)
 #define GSYM "Lg"

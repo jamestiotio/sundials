@@ -34,13 +34,15 @@
  * Run statistics (optional outputs) are printed at the end.
  * -----------------------------------------------------------------*/
 
-#include <cvode/cvode.h> /* prototypes for CVODE fcts., consts.  */
-#include <math.h>
+#include <cvode/cvode.h>            /* prototypes for CVODE fcts., consts.  */
 #include <nvector/nvector_serial.h> /* access to serial N_Vector            */
 #include <stdio.h>
 #include <stdlib.h>
+#include <sundials/sundials_core.h>
 #include <sunlinsol/sunlinsol_band.h> /* access to band SUNLinearSolver       */
 #include <sunmatrix/sunmatrix_band.h> /* access to band SUNMatrix             */
+
+#include "cvode/cvode_ls.h"
 
 /* Problem Constants */
 

@@ -41,15 +41,10 @@
 #include "ark_harmonic_symplectic.h"
 
 #include <arkode/arkode.h>
-#include <arkode/arkode_sprk.h>
 #include <arkode/arkode_sprkstep.h> /* prototypes for SPRKStep fcts., consts */
 #include <math.h>
 #include <nvector/nvector_serial.h> /* serial N_Vector type, fcts., macros  */
 #include <stdio.h>
-#include <string.h>
-#include <sundials/sundials_math.h> /* def. math fcns, 'sunrealtype'           */
-#include <sundials/sundials_nvector.h>
-#include <sundials/sundials_types.h>
 
 typedef struct
 {

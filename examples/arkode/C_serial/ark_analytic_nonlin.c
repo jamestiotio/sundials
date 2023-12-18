@@ -26,12 +26,12 @@
  *-----------------------------------------------------------------*/
 
 /* Header files */
-#include <arkode/arkode_erkstep.h> /* prototypes for ERKStep fcts., consts */
-#include <math.h>
+#include <arkode/arkode_erkstep.h>  /* prototypes for ERKStep fcts., consts */
 #include <nvector/nvector_serial.h> /* serial N_Vector types, fcts., macros */
 #include <stdio.h>
-#include <sundials/sundials_math.h>  /* def. of SUNRsqrt, etc. */
-#include <sundials/sundials_types.h> /* def. of type 'sunrealtype' */
+#include <sundials/sundials_core.h>
+
+#include "arkode/arkode.h"
 
 #if defined(SUNDIALS_EXTENDED_PRECISION)
 #define GSYM "Lg"

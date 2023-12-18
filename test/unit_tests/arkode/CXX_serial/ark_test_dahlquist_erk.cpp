@@ -18,15 +18,14 @@
 
 // Header files
 #include <arkode/arkode_erkstep.h>
-#include <cmath>
-#include <cstdio>
-#include <iomanip>
+#include <cstdlib>
 #include <iostream>
 #include <nvector/nvector_serial.h>
 #include <string>
 #include <sundials/sundials_core.hpp>
-
+#include "arkode/arkode.h"
 #include "arkode/arkode_butcher.h"
+#include "arkode/arkode_butcher_erk.h"
 
 #if defined(SUNDIALS_EXTENDED_PRECISION)
 #define GSYM "Lg"

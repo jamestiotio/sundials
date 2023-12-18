@@ -108,9 +108,10 @@
 #include <nvector/nvector_parallel.h>
 #include <stdio.h>
 #include <stdlib.h>
-#include <sundials/sundials_dense.h>
-#include <sundials/sundials_types.h>
+#include <sundials/sundials_core.h>
 #include <sunlinsol/sunlinsol_spgmr.h>
+
+#include "idas/idas_ls.h"
 
 /* helpful macros */
 

@@ -61,9 +61,10 @@
 #include <nvector/nvector_parallel.h> /* access to MPI-parallel N_Vector        */
 #include <stdio.h>
 #include <stdlib.h>
-#include <sundials/sundials_dense.h> /* prototypes for small dense fcts.       */
-#include <sundials/sundials_types.h> /* definitions of sunrealtype, sunbooleantype   */
+#include <sundials/sundials_core.h>
 #include <sunlinsol/sunlinsol_spgmr.h> /* access to SPGMR SUNLinearSolver        */
+
+#include "cvode/cvode_ls.h"
 
 /* helpful macros */
 

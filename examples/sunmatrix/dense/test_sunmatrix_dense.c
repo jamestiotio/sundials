@@ -21,8 +21,7 @@
 #include <nvector/nvector_serial.h>
 #include <stdio.h>
 #include <stdlib.h>
-#include <sundials/sundials_math.h>
-#include <sundials/sundials_types.h>
+#include <sundials/sundials_core.h>
 #include <sunmatrix/sunmatrix_dense.h>
 
 #include "test_sunmatrix.h"
