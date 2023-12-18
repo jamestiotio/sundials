@@ -34,7 +34,6 @@
 #include <iostream>
 #include <limits>
 #include <string>
-
 #include <sundials/sundials_core.hpp>
 
 // Include desired integrators, vectors, linear solvers, and nonlinear solvers
