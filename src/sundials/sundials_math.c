@@ -22,6 +22,7 @@
 #include <sundials/sundials_math.h>
 #include <sundials/sundials_types.h>
 
+SUNDIALS_MAYBE_UNUSED
 static long double sunNextafterl(long double from, long double to);
 
 static sunbooleantype sunIsInf(sunrealtype a)
@@ -111,6 +112,7 @@ sunbooleantype SUNRCompareTol(sunrealtype a, sunrealtype b, sunrealtype tol)
   return (diff >= SUNMAX(10 * SUN_UNIT_ROUNDOFF, tol * norm));
 }
 
+SUNDIALS_MAYBE_UNUSED
 long double sunNextafterl(long double from, long double to)
 {
 #if defined(__cplusplus) || defined(SUNDIALS_C_COMPILER_HAS_MATH_PRECISIONS)

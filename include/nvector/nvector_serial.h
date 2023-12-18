@@ -103,7 +103,10 @@ SUNDIALS_EXPORT
 void N_VPrintFile_Serial(N_Vector v, FILE* outfile);
 
 SUNDIALS_STATIC_INLINE
-N_Vector_ID N_VGetVectorID_Serial(N_Vector v) { return SUNDIALS_NVEC_SERIAL; }
+N_Vector_ID N_VGetVectorID_Serial(SUNDIALS_MAYBE_UNUSED N_Vector v)
+{
+  return SUNDIALS_NVEC_SERIAL;
+}
 
 SUNDIALS_EXPORT
 N_Vector N_VCloneEmpty_Serial(N_Vector w);
